@@ -22,7 +22,7 @@ namespace Practica.Models
 
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
-        // Relación con Categoria (Producto pertenece a una sola Categoria)
+
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
     }

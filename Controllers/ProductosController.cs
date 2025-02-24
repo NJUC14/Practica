@@ -20,7 +20,7 @@ namespace TiendaAPI.Controllers
             _logger = logger;
         }
 
-        // GET: api/productos
+  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoDTOs>>> GetProductos()
         {
@@ -38,7 +38,7 @@ namespace TiendaAPI.Controllers
             return Ok(productosDTO);
         }
 
-        // GET: api/productos/{id}
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductoDTOs>> GetProducto(int id)
         {
@@ -62,7 +62,7 @@ namespace TiendaAPI.Controllers
             return Ok(productoDTO);
         }
 
-        // POST: api/productos
+
         [HttpPost]
         public async Task<ActionResult<ProductoDTOs>> CreateProducto(ProductoDTOs productoDTO)
         {
@@ -97,7 +97,7 @@ namespace TiendaAPI.Controllers
             return CreatedAtAction(nameof(GetProducto), new { id = producto.Id }, productoDTO);
         }
 
-        // PUT: api/productos/{id}
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProducto(int id, ProductoDTOs productoDTO)
         {
@@ -132,7 +132,7 @@ namespace TiendaAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/productos/{id}
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProducto(int id)
         {

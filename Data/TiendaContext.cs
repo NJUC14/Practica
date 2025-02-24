@@ -22,7 +22,7 @@ namespace Practica.Data
 
                 entity.Property(p => p.Precio)
                       .IsRequired()
-                      .HasColumnType("decimal(18,2)"); // Especificamos el tipo de columna
+                      .HasColumnType("decimal(18,2)"); 
 
                 entity.Property(p => p.Stock)
                       .IsRequired();
@@ -30,7 +30,7 @@ namespace Practica.Data
                 entity.Property(p => p.FechaCreacion)
                       .HasDefaultValueSql("GETDATE()");
 
-                // Configuración de la relación con Categoria
+
                 entity.HasOne(p => p.Categoria)
                       .WithMany(c => c.Productos)
                       .HasForeignKey(p => p.CategoriaId);
@@ -42,7 +42,7 @@ namespace Practica.Data
                       .IsRequired()
                       .HasMaxLength(50);
 
-                // Aseguramos que el nombre sea único
+
                 entity.HasIndex(c => c.Nombre)
                       .IsUnique();
             });

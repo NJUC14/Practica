@@ -19,7 +19,7 @@ namespace TiendaAPI.Controllers
             _logger = logger;
         }
 
-        // POST: api/categorias
+ 
         [HttpPost]
         public async Task<ActionResult<CategoriaDTOs>> CreateCategoria(CategoriaDTOs categoriaDTO)
         {
@@ -49,7 +49,7 @@ namespace TiendaAPI.Controllers
             return CreatedAtAction(nameof(GetCategoria), new { id = categoria.Id }, categoriaDTO);
         }
 
-        // GET: api/categorias/{id}
+ 
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoriaDTOs>> GetCategoria(int id)
         {

@@ -11,7 +11,7 @@ namespace Practica.Models
         [MaxLength(50)]
         public string Nombre { get; set; }
 
-        // Relación: Una Categoria puede tener muchos Productos
+
         public ICollection<Producto> Productos { get; set; }
     }
 }
