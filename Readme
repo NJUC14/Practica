@@ -1,0 +1,13 @@
+Decisiones de Diseño en el Proyecto
+
+1. Uso de Code First
+Decidí utilizar Code First de Entity Framework Core porque me permite definir el modelo de datos directamente en el código y gestionar la base de datos mediante migraciones. Esto facilita la evolución del esquema sin depender de una base de datos preexistente. Consideré que esta opción era la mejor para mantener un mayor control sobre la estructura del sistema y evitar problemas con cambios futuros en la base de datos.
+
+2. Implementación de DTOs
+Creé una carpeta exclusiva para Data Transfer Objects (DTOs) con el objetivo de desacoplar la lógica del dominio de la API. Con esta decisión, evito exponer directamente las entidades de la base de datos y mejoro la seguridad del sistema. También facilita la modificación de la API sin afectar la estructura interna de la base de datos, permitiendo enviar y recibir solo la información necesaria en cada operación.
+
+3. Uso de ILogger
+Implementé ILogger en los controladores para registrar eventos, solicitudes y posibles errores. Considero que esta práctica es fundamental para detectar y solucionar problemas de manera eficiente, especialmente en entornos de producción. Con esta integración, puedo realizar un seguimiento detallado del comportamiento del sistema y mejorar la depuración.
+
+4. Uso de Migraciones en Entity Framework Core
+Utilicé las herramientas de migraciones de Entity Framework Core para gestionar cambios en la estructura de la base de datos sin necesidad de reconstruirla manualmente. Al ejecutar migraciones controladas, puedo mantener un historial de cambios y asegurar que el esquema evolucione sin afectar los datos existentes.
