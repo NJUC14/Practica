@@ -11,10 +11,10 @@ namespace TiendaAPI.Controllers
     [Route("api/[controller]")]
     public class ProductosController : ControllerBase
     {
-        private readonly PracticaContext _context;
+        private readonly TiendaContext _context;
         private readonly ILogger<ProductosController> _logger;
 
-        public ProductosController(PracticaContext context, ILogger<ProductosController> logger)
+        public ProductosController(TiendaContext context, ILogger<ProductosController> logger)
         {
             _context = context;
             _logger = logger;

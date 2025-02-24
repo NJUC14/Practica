@@ -166,3 +166,4 @@ D:\Proyectos_Personales\Practica\Practica\Practica\obj\Debug\net8.0\refint\Pract
 D:\Proyectos_Personales\Practica\Practica\Practica\obj\Debug\net8.0\Practica.pdb
 D:\Proyectos_Personales\Practica\Practica\Practica\obj\Debug\net8.0\Practica.genruntimeconfig.cache
 D:\Proyectos_Personales\Practica\Practica\Practica\obj\Debug\net8.0\ref\Practica.dll
+D:\Proyectos_Personales\Practica\Practica\Practica\obj\Debug\net8.0\Practica.sourcelink.json

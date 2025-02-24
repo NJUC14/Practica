@@ -11,7 +11,7 @@ using Practica.Data;
 
 namespace Practica.Migrations
 {
-    [DbContext(typeof(PracticaContext))]
+    [DbContext(typeof(TiendaContext))]
     [Migration("20250224190213_Inicial")]
     partial class Inicial
     {

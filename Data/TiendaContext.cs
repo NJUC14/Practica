@@ -3,9 +3,9 @@ using Practica.Models;
 
 namespace Practica.Data
 {
-    public class PracticaContext : DbContext
+    public class TiendaContext : DbContext
     {
-        public PracticaContext(DbContextOptions<PracticaContext> options) : base(options) { }
+        public TiendaContext(DbContextOptions<TiendaContext> options) : base(options) { }
 
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }

@@ -10,7 +10,7 @@ using Practica.Data;
 
 namespace Practica.Migrations
 {
-    [DbContext(typeof(PracticaContext))]
+    [DbContext(typeof(TiendaContext))]
     partial class PracticaContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
